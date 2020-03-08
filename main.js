@@ -1,12 +1,13 @@
-const fs = require("fs");
 const webdriver = require("selenium-webdriver");
 const chromedriver = require("chromedriver");
 const chrome = require("selenium-webdriver/chrome");
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 
 const app = express();
 app.use(morgan("combined"));
+app.use(cors());
 
 const chromeCapabilities = webdriver.Capabilities.chrome();
 chromeCapabilities.set("chromeOptions", { args: ["--headless"] });
@@ -31,7 +32,7 @@ function getURLParams(url) {
 
 function search(query) {
   return driver
-    .get("https://music.youtube.com/search?q=song " + query)
+    .get("https://music.youtube.com/search?q=" + query)
     .then(() => {
       return driver.wait(
         webdriver.until.elementLocated(
@@ -65,6 +66,6 @@ app.get("/", (req, res, next) => {
     });
 });
 
-app.listen(3000, () => {
-  console.log("Server started http://localhost:3000");
+app.listen(4000, () => {
+  console.log("Server started http://localhost:4000");
 });

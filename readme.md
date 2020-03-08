@@ -7,7 +7,7 @@ Search Songs in youtube Music without an API Key. This approach uses Chrome Head
 - Include Chrome Webdriver in your path: https://chromedriver.chromium.org/downloads
 - Update Chrome Driver version in `package.json` if necessary.
 - `npm install` - Download dependencies
-- `npm run start` - Initialize API at http://localhost:3000
+- `npm run start` - Initialize API at http://localhost:4000
 
 ## Example of usage
 
