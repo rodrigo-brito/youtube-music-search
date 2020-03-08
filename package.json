@@ -11,5 +11,8 @@
     "morgan": "^1.9.1",
     "puppeteer": "^2.1.1",
     "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "scripts": {
+    "start": "node main.js"
   }
 }
