@@ -8,7 +8,7 @@
   "dependencies": {
     "chromedriver": "^85.0.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "morgan": "^1.9.1",
     "puppeteer": "^2.1.1",
     "selenium-webdriver": "^4.0.0-alpha.7"
