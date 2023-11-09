@@ -6,7 +6,7 @@
   "author": "Rodrigo Brito",
   "license": "MIT",
   "dependencies": {
-    "chromedriver": "^108.0.0",
+    "chromedriver": "^119.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "morgan": "^1.9.1",
